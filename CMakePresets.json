@@ -2,13 +2,13 @@
   "version": 6,
   "configurePresets": [
     {
-      "name": "vs2022-dev",
-      "displayName": "vs2022 configuration-dev",
+      "name": "vs2022",
+      "displayName": "vs2022 configuration",
       "description": "Sets Visual Studio generator, build and install directory",
       "generator": "Visual Studio 17 2022",
       "architecture": "x64",
       "binaryDir": "build",
-      "toolchainFile": "D:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "toolchainFile": "/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_INSTALL_PREFIX": "build/install",
@@ -18,18 +18,18 @@
   ],
   "buildPresets": [
     {
-      "name": "vs2022-debug-dev",
+      "name": "vs2022-debug",
       "displayName": "Visual Studio 2022 Debug",
       "description": "Builds the project",
-      "configurePreset": "vs2022-dev",
+      "configurePreset": "vs2022",
       "configuration": "Debug",
       "targets": ["ALL_BUILD"]
     },
     {
-      "name": "vs2022-release-dev",
+      "name": "vs2022-release",
       "displayName": "Visual Studio 2022 Release",
       "description": "Builds the project",
-      "configurePreset": "vs2022-dev",
+      "configurePreset": "vs2022",
       "configuration": "Release",
       "targets": ["ALL_BUILD"]
     }
