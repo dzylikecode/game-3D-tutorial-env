@@ -27,8 +27,8 @@ int main(int argc, char* argv[]) {
   putenv(config_dir);
   auto res = getenv("OGRE_CONFIG_DIR");
   auto fileName =
-      "C:/Users/Z/Desktop/Dz/fishing/game-3D-tutorial-env/build/"
-      "vcpkg_installed/x64-windows/debug/etc/ogre/../../plugins/"
+      "C:/Users/Z/Desktop/Dz/fishing/game-3D-tutorial-env/demo/05-ogre/config/"
+      "../../../build/vcpkg_installed/x64-windows/debug/plugins/"
       "ogre\\Plugin_DotScene_d.dll";
   // check if file exists
   FILE* file;
@@ -77,7 +77,7 @@ int main(int argc, char* argv[]) {
   ctx.getRenderWindow()->addViewport(cam);
 
   // finally something to render
-  Ogre::Entity* ent = scnMgr->createEntity("Sinbad.mesh");
+  Ogre::Entity* ent = scnMgr->createEntity("ogrehead.mesh");
   Ogre::SceneNode* node = scnMgr->getRootSceneNode()->createChildSceneNode();
   node->attachObject(ent);
   //! [setup]
