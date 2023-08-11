@@ -13,7 +13,7 @@
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_INSTALL_PREFIX": "build/install",
         "CMAKE_CXX_STANDARD": "17",
-        "MY_OGRE_CONFIG_DIR": "build/vcpkg_installed/x64-windows/debug/etc/ogre"
+        "MY_OGRE_CONFIG_DIR": "config"
       }
     }
   ],
